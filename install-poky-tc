@@ -1,6 +1,6 @@
 #!/usr/bin/expect
 set timeout 10
-spawn sh toolchain-binaries.sh
+spawn ./toolchain-binaries.sh
 expect "Enter target directory for SDK (default: ~/poky_sdk):\r" 
 send -- "./poky_sdk\r"
 expect "You are about to install the SDK to \"/home/\$HOME/tla/tc_dir/poky_sdk\". Proceed\[Y/n\]?\r"
